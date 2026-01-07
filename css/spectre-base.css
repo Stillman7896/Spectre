@@ -47,6 +47,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: var(--body-text);
     background: var(--body-fill);
+    background: radial-gradient(circle at 50% 50%, var(--panel-fill), var(--body-fill));
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -495,7 +496,7 @@ label.box:hover, label.box[checked] {
 .box p.error, .box p.info {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     left: 0;
     margin: 0.5em;
     font-size: smaller;

@@ -26,7 +26,7 @@
     <body>
         <div class="banner">
             <div class="container">
-                <h4>Alpha Version</h4>
+                <h4>Spectre 3.0-alpha.2</h4>
                 <p>You are trying out a pre-release of Spectre's web version.</p>
                 <a href="https://gitlab.com/spectre.app/web/" class="btn btn-transparent">Source Code</a>
             </div>
@@ -98,12 +98,34 @@
                             <p>
                                 <label id="siteName">
                                     <i class="fa-duotone fa-fw fa-globe"></i>
-                                    Site Domain
+                                    Password Name or Site Domain
                                     <input type="text" placeholder="eg. twitter.com">
                                 </label>
                             </p>
-                            
-                            <p>&nbsp;</p>
+    
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6">
+                                    <p>
+                                        <label id="siteCounter">
+                                            <i class="fa-duotone fa-fw fa-rectangle-vertical-history"></i>
+                                            Password Number
+                                            <input type="number" placeholder="1" min="1" max="100" value="1" class="half" />
+                                        </label>
+                                    </p>
+                                </div>
+        
+                                <div class="col-lg-6">
+                                    <p>
+                                        <label id="siteType">
+                                            <i class="fa-duotone fa-fw fa-key"></i>
+                                            Password Type
+                                            <select></select>
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr>
 
                             <p>
                                 <input type="radio" name="sitePurpose" id="sitePurposePassword" value="com.lyndir.masterpassword">
@@ -113,25 +135,7 @@
                                 <input type="radio" name="sitePurpose" id="sitePurposeAnswer" value="com.lyndir.masterpassword.answer">
                                 <label for="sitePurposeAnswer">Site Security Answer</label>
                             </p>
-
-                            <hr>
-    
-                            <p>
-                                <label id="siteCounter">
-                                    <i class="fa-duotone fa-fw fa-rectangle-vertical-history"></i>
-                                    Site Counter
-                                    <input type="number" placeholder="1" min="1" max="100" value="1" class="half" />
-                                </label>
-                            </p>
-    
-                            <p>
-                                <label id="siteType">
-                                    <i class="fa-duotone fa-fw fa-rectangle-vertical-history"></i>
-                                    Type
-                                    <select></select>
-                                </label>
-                            </p>
-    
+        
                             <p>
                                 <label id="siteResult">
                                     <i class="fa-duotone fa-fw" style="background: url('images/spectre-light-glyph.svg') no-repeat center/contain"></i>
